@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chocolate House | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="logo">Chocolate House</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Order &amp; Contact</h2>
+    <p class="intro">Place an order or send us a question. We usually reply within one working day.</p>
+
+    <div class="contact-layout">
+
+      <!-- Contact information -->
+      <aside class="contact-info">
+        <h3>Get in touch</h3>
+        <ul>
+          <li><strong>Phone</strong><br>+92 300 0000000</li>
+          <li><strong>Email</strong><br>hello@chocolatehouse.com</li>
+          <li><strong>Address</strong><br>12 Cocoa Street, Your City</li>
+          <li><strong>Opening hours</strong><br>Mon &ndash; Sat: 10:00 am &ndash; 8:00 pm<br>Sunday: Closed</li>
+        </ul>
+        <p class="note">Gift packs and bulk orders: please order at least 2 days in advance.</p>
+      </aside>
+
+      <!-- Order form -->
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Your details</legend>
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required minlength="3" maxlength="30" placeholder="Your name">
+            </div>
+
+            <div class="field">
+              <label for="mail">Email</label>
+              <input type="email" id="mail" name="mail" required placeholder="you@example.com">
+            </div>
+
+            <div class="field">
+              <label for="pass">Password</label>
+              <input type="password" id="pass" name="pass" required minlength="6" maxlength="20" placeholder="6 to 20 characters">
+            </div>
+
+            <div class="field">
+              <label for="dob">Date of birth</label>
+              <input type="date" id="dob" name="dob">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your order</legend>
+          <div class="form-grid">
+            <div class="field">
+              <label for="choc">Choose a bar</label>
+              <select id="choc" name="choc">
+                <option value="silky">Silky Smooth</option>
+                <option value="bubbly" selected>Bubbly Gum</option>
+                <option value="special">Special Edition</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="qty">Quantity (1 to 20)</label>
+              <input type="number" id="qty" name="qty" min="1" max="20" value="1">
+            </div>
+
+            <div class="field">
+              <label for="time">Delivery time</label>
+              <input type="time" id="time" name="time">
+            </div>
+
+            <div class="field">
+              <p class="group-title">Pack type</p>
+              <div class="choice-group">
+                <input type="radio" id="r1" name="pack" value="normal" checked>
+                <label for="r1" class="inline">Normal</label>
+                <input type="radio" id="r2" name="pack" value="gift">
+                <label for="r2" class="inline">Gift</label>
+              </div>
+            </div>
+
+            <div class="field full">
+              <p class="group-title">Extras</p>
+              <div class="choice-group">
+                <input type="checkbox" id="c1" name="extra" value="card" checked>
+                <label for="c1" class="inline">Greeting card</label>
+                <input type="checkbox" id="c2" name="extra" value="ribbon">
+                <label for="c2" class="inline">Ribbon</label>
+              </div>
+            </div>
+
+            <div class="field full">
+              <label for="msg">Message</label>
+              <textarea id="msg" name="msg" rows="4" cols="30" maxlength="200" placeholder="Write your message (max 200 characters)"></textarea>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit">Send Order</button>
+          <button type="reset" class="secondary">Clear</button>
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Chocolate House | <a href="index.html">Home</a> | <a href="products.html">Products</a></p>
+  </footer>
+</body>
+</html>
