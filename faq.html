@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chocolate House | FAQ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+  <header>
+    <h1 id="logo">Chocolate House</h1>
+    <nav>
+      <a href="about.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="faq.html" class="active">FAQ</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Frequently Asked Questions</h2>
+    <p class="page-intro">Quick answers about ordering, our bars and how to keep them fresh. Click a question to open it.</p>
+
+    <div class="faq-layout">
+
+      <aside class="faq-side">
+        <div class="faq-box">
+          <h3>Search</h3>
+          <label for="faqSearch">Type a word (e.g. gift, store, price)</label>
+          <input type="text" id="faqSearch" placeholder="Search questions" autocomplete="off">
+        </div>
+
+        <div class="faq-box faq-contact">
+          <h3>Still need help?</h3>
+          <p>Send us a message and we usually reply within one working day.</p>
+          <div class="faq-links">
+            <a href="contact.html" class="btn">Contact Us</a>
+          </div>
+        </div>
+      </aside>
+
+      <section class="faq-list" id="faqList">
+
+        <div class="faq-group">
+          <h3 class="faq-group-title">Ordering</h3>
+
+          <article class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">How do I place an order?</button>
+            <div class="faq-a" hidden><p>Open the Contact page, fill in your details, choose a bar, quantity and delivery time, then press Send Order.</p></div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">How early should I order gift packs or bulk orders?</button>
+            <div class="faq-a" hidden><p>Please order at least 2 days in advance so we can pack everything properly.</p></div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">Can I add a greeting card or ribbon?</button>
+            <div class="faq-a" hidden><p>Yes. Tick Greeting card or Ribbon under Extras in the order form and choose the Gift pack type.</p></div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">When will you reply to my message?</button>
+            <div class="faq-a" hidden><p>We usually reply within one working day. Our hours are Monday to Saturday, 10:00 am to 8:00 pm. We are closed on Sunday.</p></div>
+          </article>
+        </div>
+
+        <div class="faq-group">
+          <h3 class="faq-group-title">Our Bars</h3>
+
+          <article class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">What are your prices?</button>
+            <div class="faq-a" hidden><p>Silky Smooth (60 g) is Rs 150, Bubbly Gum (50 g) is Rs 120 and Special Edition (90 g) is Rs 250.</p></div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">What is in the Special Edition bar?</button>
+            <div class="faq-a" hidden><p>Hazelnut and caramel, made for gifting. It is the biggest bar in our range at 90 g.</p></div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">What ingredients do you use?</button>
+            <div class="faq-a" hidden><p>Real cocoa, fresh milk from local farms and sugar.</p></div>
+          </article>
+        </div>
+
+        <div class="faq-group">
+          <h3 class="faq-group-title">Storage &amp; Allergies</h3>
+
+          <article class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">How should I store my chocolate?</button>
+            <div class="faq-a" hidden><p>Keep bars in a cool, dry place (15 to 18&deg;C), away from sunlight.</p></div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">How long does it stay fresh?</button>
+            <div class="faq-a" hidden><p>Best enjoyed within 6 months of the date printed on the wrapper.</p></div>
+          </article>
+
+          <article class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">Do your bars contain allergens?</button>
+            <div class="faq-a" hidden><p>All bars contain milk. The Special Edition also contains hazelnuts.</p></div>
+          </article>
+        </div>
+
+        <p class="faq-empty" id="faqEmpty" hidden>No question matches your search. Try another word or contact us.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Chocolate House | <a href="index.html">Home</a> | <a href="products.html">Products</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact</a></p>
+  </footer>
+
+  <div class="toast" id="toast" hidden>
+    <button type="button" class="toast-close" id="toastClose" aria-label="Close">&times;</button>
+    <h3>Need help?</h3>
+    <p>Can't find your answer? Send us a message.</p>
+    <a href="contact.html" class="btn">Contact Us</a>
+  </div>
+
+  <script src="faq.js"></script>
+</body>
+</html>
